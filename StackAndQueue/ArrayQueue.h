@@ -1,10 +1,11 @@
 #pragma once
 #include <vector>
+#include <stdexcept>
 
 class ArrayQueue
 {
 	std::vector<int> stack;
-	int head, tail;
+	int head, tail, count;
 
 public:
 
