@@ -7,6 +7,8 @@ class ListQueue
 
 public:
 
+	ListQueue();
+
 	bool empty();
 
 	void put(int data);
