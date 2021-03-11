@@ -8,6 +8,8 @@ class ArrayQueue
 
 public:
 
+	ArrayQueue(int size);
+
 	bool empty();
 
 	void put(int data);
