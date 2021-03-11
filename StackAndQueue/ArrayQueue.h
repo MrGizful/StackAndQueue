@@ -4,7 +4,7 @@
 
 class ArrayQueue
 {
-	std::vector<int> stack;
+	std::vector<int> queue;
 	int head, tail, count;
 
 public:

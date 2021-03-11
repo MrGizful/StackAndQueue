@@ -2,7 +2,7 @@
 
 ArrayQueue::ArrayQueue(int size)
 {
-	stack.resize(size);
+	queue.resize(size);
 	head = tail = count = 0;
 }
 
@@ -13,14 +13,14 @@ bool ArrayQueue::empty()
 
 void ArrayQueue::put(int data)
 {
-	if ((head + 1) % stack.size() != tail)
+	if ((head + 1) % queue.size() != tail)
 	{
 		if (count == 0)
-			head %= stack.size();
+			head %= queue.size();
 		else
-			++head %= stack.size();
+			++head %= queue.size();
 
-		stack[head] = data;
+		queue[head] = data;
 		count++;
 	}
 	else
@@ -34,11 +34,11 @@ int ArrayQueue::get()
 	if (count != 0)
 	{
 		if (--count == 0)
-			tail %= stack.size();
+			tail %= queue.size();
 		else
-			++tail %= stack.size();
+			++tail %= queue.size();
 
-		return stack[tail];
+		return queue[tail];
 	}
 	else
 	{
