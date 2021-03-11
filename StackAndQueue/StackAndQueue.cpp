@@ -1,12 +1,12 @@
 ﻿#include <iostream>
 #include "ArrayStack.h"
 #include "ListStack.h"
-
 #include "ArrayQueue.h"
+#include "ListQueue.h"
 
 int main()
 {
-    ArrayQueue test(3);
+    ListQueue test;
 
     test.put(1);
     test.put(2);
@@ -14,7 +14,4 @@ int main()
 
     test.get();
     test.put(4);
-    test.get();
-    test.get();
-    test.get();
 }
