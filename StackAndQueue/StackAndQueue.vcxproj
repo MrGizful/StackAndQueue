@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArrayQueue.cpp" />
     <ClCompile Include="ArrayStack.cpp" />
     <ClCompile Include="ListStack.cpp" />
     <ClCompile Include="StackAndQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="ArrayStack.h" />
     <ClInclude Include="ListStack.h" />
   </ItemGroup>
