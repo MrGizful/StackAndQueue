@@ -1,12 +1,13 @@
 ﻿#include <iostream>
 #include "ArrayStack.h"
+#include "ListStack.h"
 
 int main()
 {
-    ArrayStack test(10);
-    test.push(5);
-    test.push(8);
+    ListStack test;
     test.push(1);
+    test.push(2);
+    test.push(3);
 
     test.pop();
 }
