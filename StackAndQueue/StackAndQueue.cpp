@@ -2,12 +2,19 @@
 #include "ArrayStack.h"
 #include "ListStack.h"
 
+#include "ArrayQueue.h"
+
 int main()
 {
-    ListStack test;
-    test.push(1);
-    test.push(2);
-    test.push(3);
+    ArrayQueue test(3);
 
-    test.pop();
+    test.put(1);
+    test.put(2);
+    test.put(3);
+
+    test.get();
+    test.put(4);
+    test.get();
+    test.get();
+    test.get();
 }
